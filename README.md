@@ -1,5 +1,2 @@
 # Android App - Group 08
-# Created By:
-# Daniel Egladyous
-# Manpreet Singh  
-
+# Created By: Daniel Egladyous and Manpreet Singh
