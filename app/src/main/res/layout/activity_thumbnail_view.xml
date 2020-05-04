@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:columnWidth="90dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:listSelector="@android:color/darker_gray"
+        android:stretchMode="columnWidth"
+        android:gravity="center">
+    </GridView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addPhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:tooltipText="Add Photo"
+        android:src="@android:drawable/ic_menu_add"
+        app:backgroundTint="@color/colorPrimary"
+        app:maxImageSize="50dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/removePhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:tooltipText="Remove Photo"
+        android:src="@android:drawable/ic_menu_delete"
+        android:visibility="invisible"
+        app:backgroundTint="@color/ef_colorTextPrimary"
+        app:maxImageSize="50dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/searchAlbumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:tooltipText="Search"
+        android:src="@android:drawable/ic_menu_search"
+        app:backgroundTint="@color/ef_colorTextPrimary"
+        app:maxImageSize="50dp" />
+</RelativeLayout>

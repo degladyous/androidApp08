@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/createAlbumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingTop="10dp"
+        android:text="Create Album" />
+
+    <ListView
+        android:id="@+id/albumListView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/pressAndHold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dip"
+            android:layout_centerHorizontal="true"
+            android:text="Press &#38; hold (album/photo) for more options"
+            android:textColor="@android:color/secondary_text_light"/>
+
+        <Button
+            android:id="@+id/deleteAlbumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Album"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/renameAlbumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Rename Album"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

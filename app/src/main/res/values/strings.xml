@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string-array name="tagTypes">
+        <item>Person</item>
+        <item>Location</item>
+    </string-array>
+    <string-array name="searchTypes">
+        <item>Person</item>
+        <item>Location</item>
+        <item>Person and Location</item>
+    </string-array>
+</resources>
